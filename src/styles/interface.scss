@@ -1,0 +1,70 @@
+.interface{
+    display: flex;
+    justify-content: center;
+    &__inner{
+        width: 100%;
+        padding: 20px;
+        background-color: #ffc947;
+        margin: 40px 0 0 0;
+    }
+    &__title{
+        display: inline-block;
+        margin: 0 0 10px 0;
+    }
+    &__strings{
+        list-style: none;
+        max-height: 200px;
+        overflow: auto;
+        background-color: rgb(255, 145, 0);
+        &::-webkit-scrollbar {
+            width: 10px;
+            background-color: #fff;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: rgb(255, 81, 0);
+            border-radius: 3px;
+        }
+        li{
+            margin: 10px;
+        }
+    }
+}
+
+.search{
+    width: 100%;
+    outline: none;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0 0;
+    button{
+        border: 5px solid rgb(255, 145, 0);
+        flex: 0 1 50%;
+        padding: 20px 40px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 30px;
+        white-space: nowrap;
+    }
+}
+
+.checkbox{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 30px 0;
+}
+
+.text{
+    text-align: center;
+    color: crimson;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    font-weight: 900;
+}
